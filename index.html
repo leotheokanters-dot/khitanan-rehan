@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khitanan Muhammad Rehan</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Material Symbols -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="couple-photo-hero">
+        <img src="image/rehan1.png" alt="Rehan" class="photo-hero">
+      </div>
+      <h4 class="greeting">Assalamu'alaikum Wa Rahmatullahi Wa Barakatuh</h4>
+      <h1 class="main-title">Khitanan</h1>
+      <h2 class="child-name">Muhammad Rehan</h2>
+      <p class="subtitle">Anak ke-2 dari Bpk. Kartono & Ibu Siti Atiahul Mubarokah/Tia</p>
+      
+      <div class="countdown-section mt-5">
+        <div id="countdown" class="countdown"></div>
+      </div>
+      
+      <a href="#home" class="btn-scroll-down">
+        <span class="material-symbols-outlined">expand_more</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg sticky-top blur-bg">
+    <div class="container-fluid">
+      <span class="navbar-brand font-islamic">Khitanan Rehan</span>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Undangan</a></li>
+          <li class="nav-item"><a class="nav-link" href="#info">Info Acara</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="#location">Lokasi</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center mb-5">
+          <p class="greeting-text to-guest">Kepada Yth. <span id="guestName">Bapak/Ibu/Saudara/i</span></p>
+          <h2 class="section-title">Undangan Khitanan</h2>
+          <div class="divider"></div>
+          <p class="invitation-text">
+            Dengan mengharap Rahmat dan Ridho Allah SWT, kami dengan senang hati mengundang Bapak/Ibu, Saudara/i untuk hadir dalam acara Khitanan anak kami:
+          </p>
+        </div>
+      </div>
+
+      <div class="row child-info">
+        <div class="col-lg-5 text-center mb-4">
+          <div class="photo-frame">
+            <img src="image/rehan2.png" alt="Muhammad Rehan" class="child-photo">
+          </div>
+        </div>
+        <div class="col-lg-7 d-flex align-items-center">
+          <div class="child-details">
+            <h3 class="child-name-large">Muhammad Rehan</h3>
+            <p class="child-info-text">Anak ke-2 dari Bpk. Kartono & Ibu Siti Atiahul Mubarokah/Tia</p>
+            <p class="quranic-text">
+              <i>"Sesungguhnya kami tidak menderita sesuatu musibah melainkan karena kesalahan tangan kami sendiri"</i><br>
+              <small>(QS. Al-Hadid: 22)</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Acara Section -->
+  <section id="info" class="info-section">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Info Acara</h2>
+      
+      <div class="row g-4 mb-5">
+        <!-- Tanggal & Waktu -->
+        <div class="col-md-6">
+          <div class="info-card">
+            <div class="info-icon">
+              <span class="material-symbols-outlined">calendar_month</span>
+            </div>
+            <div class="info-content">
+              <h4>Tanggal & Waktu</h4>
+              <p class="fw-bold">Minggu, 12 April 2026</p>
+              <p>24 Syawal 1447 H</p>
+              <p class="time-info"><span class="material-symbols-outlined">schedule</span> Jam 09:00 WIB s.d. Selesai</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lokasi -->
+        <div class="col-md-6">
+          <div class="info-card">
+            <div class="info-icon">
+              <span class="material-symbols-outlined">location_on</span>
+            </div>
+            <div class="info-content">
+              <h4>Lokasi Acara</h4>
+              <p class="fw-bold">Kp. Ciseukcut Barat, RT01/RW04</p>
+              <p>Ds. Mekarsari Kec. Panimbang<br>Kab Pandeglang, Banten</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Keluarga Besar -->
+      <div class="family-section">
+        <h3 class="text-center mb-4">Keluarga Besar</h3>
+        <div class="row align-items-center">
+          <div class="col-lg-4 text-center mb-4 mb-lg-0">
+            <div class="photo-frame-family">
+              <img src="image/keluarga1.png" alt="Keluarga" class="family-photo">
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <p class="doa-text">
+              Ya Allah, berikanilah kami kesempatan untuk mencintai hayat ini dengan berbagai kepasadaran untuk membanyaki ibadah dan tarangilah hatimya dan sematan ia. Teguhkanlah imannya serta lapangkan rokhnya dan semoga berita ia menjadi kesempatan mu dan bersama mereka untuk berjuang.
+            </p>
+            <div class="parents-info">
+              <div class="parent">
+                <h5>Bpk. Kartono</h5>
+                <p>Ayahanda</p>
+              </div>
+              <div class="parent">
+                <h5>&</h5>
+              </div>
+              <div class="parent">
+                <h5>Ibu Siti Atiahul Mubarokah/Tia</h5>
+                <p>Ibunda</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Galeri Rehan</h2>
+      
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-item-1">
+          <img src="image/rehan3.png" alt="Gallery 1">
+          <div class="gallery-overlay">
+            <span class="material-symbols-outlined">zoom_in</span>
+          </div>
+        </div>
+        <div class="gallery-item gallery-item-2">
+          <img src="image/rehan4.png" alt="Gallery 2">
+          <div class="gallery-overlay">
+            <span class="material-symbols-outlined">zoom_in</span>
+          </div>
+        </div>
+        <div class="gallery-item gallery-item-3">
+          <img src="image/rehan5.png" alt="Gallery 3">
+          <div class="gallery-overlay">
+            <span class="material-symbols-outlined">zoom_in</span>
+          </div>
+        </div>
+        <div class="gallery-item gallery-item-4">
+          <img src="image/keluarga2.png" alt="Gallery 4">
+          <div class="gallery-overlay">
+            <span class="material-symbols-outlined">zoom_in</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Section -->
+  <section id="location" class="location-section">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Lokasi Acara</h2>
+      
+      <div class="row">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div id="map" class="map-container"></div>
+        </div>
+        <div class="col-lg-6">
+          <div class="location-info">
+            <h3>Alamat Lengkap</h3>
+            <div class="address-box">
+              <p class="fw-bold">Kp. Ciseukcut Barat, RT01/RW04</p>
+              <p>Ds. Mekarsari Kec. Panimbang</p>
+              <p>Kab Pandeglang, Banten</p>
+            </div>
+            
+            <h4 class="mt-4">Petunjuk Arah</h4>
+            <div class="directions">
+              <div class="direction-item">
+                <span class="material-symbols-outlined">near_me</span>
+                <div>
+                  <p class="fw-bold">Dari Kota</p>
+                  <small>Bisa menggunakan Google Maps atau aplikasi navigasi lainnya</small>
+                </div>
+              </div>
+              <a href="https://wa.me/6287840930121" target="_blank" class="direction-item" style="text-decoration: none; color: inherit;">
+                <span class="material-symbols-outlined">call</span>
+                <div>
+                  <p class="fw-bold">Hubungi Kami</p>
+                  <small>Klik untuk chat WhatsApp</small>
+                </div>
+              </a>
+            </div>
+
+            <a href="https://www.google.com/maps/search/-6.524364,+105.737661" target="_blank" class="btn-map mt-4">
+              <span class="material-symbols-outlined">map</span> Buka di Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing Section -->
+  <section class="closing-section">
+    <div class="container text-center">
+      <p class="closing-greeting">Wassalamu'alaikum Wa Rahmatullahi Wa Barakatuh</p>
+      <p class="closing-text mt-4">
+        Sekali lagi kami ucapkan terima kasih atas doa dan dukungan Bapak/Ibu, Saudara/i sekalian untuk kesuksesan acara khitanan anak kami.
+      </p>
+      <p class="closing-family mt-4">
+        <i>Hormat Kami,</i><br>
+        <b>Keluarga Besar Bpk. Kartono</b>
+      </p>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

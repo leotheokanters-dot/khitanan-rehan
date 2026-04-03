@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panduan Penggunaan - Undangan Khitanan Rehan</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Poppins', 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #F5F5F5 0%, #FFFFFF 100%);
+      color: #2C2C2C;
+      line-height: 1.6;
+      padding: 2rem;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+    }
+    
+    .header {
+      background: linear-gradient(135deg, #D4AF37 0%, #E8C547 100%);
+      color: white;
+      padding: 3rem;
+      text-align: center;
+    }
+    
+    .header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .header p {
+      font-size: 1.1rem;
+      opacity: 0.95;
+    }
+    
+    .content {
+      padding: 3rem;
+    }
+    
+    .section {
+      margin-bottom: 3rem;
+    }
+    
+    .section h2 {
+      color: #D4AF37;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 3px solid #D4AF37;
+    }
+    
+    .section h3 {
+      color: #2C2C2C;
+      font-size: 1.3rem;
+      margin: 1.5rem 0 1rem 0;
+    }
+    
+    .example-box {
+      background: #F9F9F9;
+      border-left: 4px solid #D4AF37;
+      padding: 1.5rem;
+      margin: 1rem 0;
+      border-radius: 8px;
+      font-family: 'Courier New', monospace;
+    }
+    
+    .example-box p {
+      margin: 0.5rem 0;
+      word-break: break-all;
+    }
+    
+    .link-button {
+      display: inline-block;
+      background: linear-gradient(135deg, #D4AF37 0%, #E8C547 100%);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      margin: 0.5rem 0.5rem 0.5rem 0;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    
+    .link-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+      color: white;
+      text-decoration: none;
+    }
+    
+    .list-item {
+      margin: 1rem 0;
+      padding-left: 2rem;
+      position: relative;
+    }
+    
+    .list-item::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: #D4AF37;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    
+    .feature-card {
+      background: linear-gradient(135deg, #F9F9F9 0%, #F5F5F5 100%);
+      padding: 2rem;
+      border-radius: 10px;
+      border: 2px solid #E8C547;
+      transition: all 0.3s ease;
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+    }
+    
+    .feature-card h4 {
+      color: #D4AF37;
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+    
+    .feature-card p {
+      color: #666;
+      font-size: 0.95rem;
+    }
+    
+    .code-block {
+      background: #2C2C2C;
+      color: #D4AF37;
+      padding: 1.5rem;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-family: 'Courier New', monospace;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      margin: 1rem 0;
+    }
+    
+    .warning {
+      background: #FFF3CD;
+      border-left: 4px solid #FFC107;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin: 1rem 0;
+    }
+    
+    .success {
+      background: #D4EDDA;
+      border-left: 4px solid #28A745;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin: 1rem 0;
+    }
+    
+    .footer {
+      background: #F5F5F5;
+      padding: 2rem;
+      text-align: center;
+      color: #666;
+      border-top: 2px solid #E8C547;
+    }
+    
+    .footer p {
+      margin: 0.5rem 0;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    
+    table th,
+    table td {
+      padding: 1rem;
+      text-align: left;
+      border-bottom: 1px solid #DDD;
+    }
+    
+    table th {
+      background: linear-gradient(135deg, #D4AF37 0%, #E8C547 100%);
+      color: white;
+      font-weight: 600;
+    }
+    
+    table tr:hover {
+      background: #F9F9F9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🌟 Panduan Undangan Khitanan Rehan</h1>
+      <p>Petunjuk lengkap cara menggunakan website undangan</p>
+    </div>
+    
+    <div class="content">
+      <!-- Quick Start -->
+      <div class="section">
+        <h2>🚀 Quick Start</h2>
+        <div class="success">
+          <strong>Untuk membuka undangan:</strong><br>
+          Buka file <code>index.html</code> di browser anda atau gunakan live server.
+        </div>
+        <p>Website ini dirancang dengan tema islami yang elegan dengan warna putih, abu-abu, dan emas. Semua fitur sudah siap digunakan!</p>
+      </div>
+      
+      <!-- URL Parameters -->
+      <div class="section">
+        <h2>🎯 Personalisasi dengan URL Parameters</h2>
+        <p>Anda dapat mempersonalisasi undangan dengan menambahkan parameter di URL. Ini sangat berguna untuk mengirimkan undangan ke individu yang berbeda.</p>
+        
+        <h3>Cara Penggunaan:</h3>
+        <div class="example-box">
+          Format: <strong>index.html?to=NAMA_PENERIMA</strong>
+        </div>
+        
+        <h3>Contoh URL:</h3>
+        <div style="margin: 2rem 0;">
+          <div class="example-box">
+            <p>📌 <strong>Untuk Pak Kartono:</strong></p>
+            <p>index.html?to=Bapak%20Kartono</p>
+          </div>
+          <div class="example-box">
+            <p>📌 <strong>Untuk Bu Tia:</strong></p>
+            <p>index.html?to=Ibu%20Siti%20Atiahul%20Mubarokah</p>
+          </div>
+          <div class="example-box">
+            <p>📌 <strong>Untuk Keluarga Besar:</strong></p>
+            <p>index.html?to=Keluarga%20Besar%20Kami</p>
+          </div>
+          <div class="example-box">
+            <p>📌 <strong>Untuk Khairul:</strong></p>
+            <p>index.html?to=Khairul</p>
+          </div>
+          <div class="example-box">
+            <p>📌 <strong>Untuk Bpk/Ibu Umum:</strong></p>
+            <p>index.html?to=Bapak/Ibu%20Saudara/i</p>
+          </div>
+        </div>
+        
+        <div class="warning">
+          <strong>⚠️ Tips:</strong> Spasi dalam URL harus diganti dengan <code>%20</code>. Misalnya "Bapak Kartono" menjadi "Bapak%20Kartono".
+        </div>
+      </div>
+      
+      <!-- Features -->
+      <div class="section">
+        <h2>✨ Fitur-Fitur Unggulan</h2>
+        
+        <div class="features-grid">
+          <div class="feature-card">
+            <h4>⏱️ Countdown Timer</h4>
+            <p>Hitung mundur otomatis hingga acara khitanan dengan format Hari, Jam, Menit, Detik.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h4>🗺️ Peta Interaktif</h4>
+            <p>OpenStreetMap terintegrasi dengan marker lokasi acara dan informasi lengkap.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h4>📸 Galeri Foto</h4>
+            <p>Galeri dengan tata letak menarik, hover effects, dan modal untuk melihat foto fullscreen.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h4>📝 RSVP Form</h4>
+            <p>Form konfirmasi kehadiran yang mudah digunakan dan menyimpan data.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h4>📱 Responsive Design</h4>
+            <p>Kompatibel dengan semua perangkat: desktop, tablet, dan smartphone.</p>
+          </div>
+          
+          <div class="feature-card">
+            <h4>🎨 Desain Islami</h4>
+            <p>Tema warna putih, abu-abu, dan emas dengan sentuhan islami yang elegan.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- struktur Konten -->
+      <div class="section">
+        <h2>📋 Struktur Konten Website</h2>
+        
+        <h3>1. Hero Section (Halaman Pertama)</h3>
+        <div class="list-item">Sambutan dalam bahasa Arab</div>
+        <div class="list-item">Judul "Khitanan" dengan nama anak</div>
+        <div class="list-item">Countdown timer hingga hari H</div>
+        <div class="list-item">Tombol scroll ke bagian undangan</div>
+        
+        <h3>2. Navigation Bar</h3>
+        <div class="list-item">Menu Undangan</div>
+        <div class="list-item">Menu Info Acara</div>
+        <div class="list-item">Menu Galeri</div>
+        <div class="list-item">Menu Lokasi</div>
+        <div class="list-item">Menu RSVP</div>
+        
+        <h3>3. Bagian Undangan</h3>
+        <div class="list-item">Pesan personalisasi untuk tamu (bisa dengan URL params)</div>
+        <div class="list-item">Foto Rehan dengan styling menarik</div>
+        <div class="list-item">Informasi nama anak dan orangtua</div>
+        <div class="list-item">Ayat Qur'an inspiratif</div>
+        
+        <h3>4. Info Acara</h3>
+        <div class="list-item">Kartu Tanggal & Waktu Acara</div>
+        <div class="list-item">Kartu Lokasi Acara</div>
+        <div class="list-item">Bagian Keluarga Besar dengan foto</div>
+        <div class="list-item">Doa dan harapan dari orangtua</div>
+        
+        <h3>5. Galeri</h3>
+        <div class="list-item">Tata letak 4 foto dengan ukuran berbeda</div>
+        <div class="list-item">Hover effects dan zoom animation</div>
+        <div class="list-item">Modal untuk melihat foto fullscreen</div>
+        
+        <h3>6. Lokasi</h3>
+        <div class="list-item">Peta interaktif OpenStreetMap</div>
+        <div class="list-item">Alamat lengkap acara</div>
+        <div class="list-item">Panduan arah dengan ikon</div>
+        <div class="list-item">Link ke OpenStreetMap untuk navigasi</div>
+        
+        <h3>7. RSVP</h3>
+        <div class="list-item">Form input nama tamu</div>
+        <div class="list-item">Pilihan konfirmasi kehadiran</div>
+        <div class="list-item">Textarea untuk pesan & doa</div>
+        <div class="list-item">Tombol submit dengan validasi</div>
+      </div>
+      
+      <!-- Kustomisasi -->
+      <div class="section">
+        <h2>🎨 Cara Kustomisasi</h2>
+        
+        <h3>1. Mengubah Nama Anak</h3>
+        <p>Buka file <code>index.html</code> dan cari:</p>
+        <div class="code-block">
+&lt;h2 class="child-name"&gt;Muhammad Rehan&lt;/h2&gt;
+        </div>
+        <p>Ubah "Muhammad Rehan" dengan nama anak Anda.</p>
+        
+        <h3>2. Mengubah Tanggal Acara</h3>
+        <p>Cari di <code>index.html</code>:</p>
+        <div class="code-block">
+Minggu, 12 April 2026<br>
+24 Syawal 1447 H<br>
+Jam 09:00 WIB
+        </div>
+        <p>Dan di <code>script.js</code>:</p>
+        <div class="code-block">
+const targetDate = new Date('2026-04-12T09:00:00')
+        </div>
+        
+        <h3>3. Mengubah Warna Tema</h3>
+        <p>Buka file <code>style.css</code> dan ubah root variables:</p>
+        <div class="code-block">
+:root {<br>
+  --primary-gold: #D4AF37;      /* Gold utama */<br>
+  --primary-gold-light: #E8C547; /* Gold terang */<br>
+  --white: #FFFFFF;            /* Putih */<br>
+  --text-dark: #2C2C2C;        /* Teks hitam */<br>
+}
+        </div>
+        
+        <h3>4. Mengganti Foto</h3>
+        <p>Foto berada di folder <code>image/</code>:</p>
+        <div class="code-block">
+rehan1.png    → Foto di hero section<br>
+rehan2.png    → Foto di halaman utama<br>
+rehan3.png, rehan4.png, rehan5.png → Galeri<br>
+keluarga1.png, keluarga2.png → Foto keluarga
+        </div>
+        <p>Anda bisa mengganti file foto dengan nama file yang sama, atau mengubah nama file di HTML.</p>
+      </div>
+      
+      <!-- Info Acara -->
+      <div class="section">
+        <h2>📍 Informasi Acara Khitanan Rehan</h2>
+        
+        <table>
+          <tr>
+            <th>Keterangan</th>
+            <th>Detail</th>
+          </tr>
+          <tr>
+            <td>Nama Anak</td>
+            <td>Muhammad Rehan</td>
+          </tr>
+          <tr>
+            <td>Usia / Ke-</td>
+            <td>2 Tahun / Anak ke-2</td>
+          </tr>
+          <tr>
+            <td>Hari / Tanggal</td>
+            <td>Minggu, 12 April 2026</td>
+          </tr>
+          <tr>
+            <td>Tanggal Hijriah</td>
+            <td>24 Syawal 1447 H</td>
+          </tr>
+          <tr>
+            <td>Waktu</td>
+            <td>09:00 WIB s.d. Selesai</td>
+          </tr>
+          <tr>
+            <td>Lokasi</td>
+            <td>Kp. Ciseukcut Barat, RT01/RW04, Ds. Mekarsari Kec. Panimbang, Kab. Pandeglang, Banten</td>
+          </tr>
+          <tr>
+            <td>Ayah</td>
+            <td>Bpk. Kartono</td>
+          </tr>
+          <tr>
+            <td>Ibu</td>
+            <td>Ibu Siti Atiahul Mubarokah / Tia</td>
+          </tr>
+          <tr>
+            <td>Koordinat GPS</td>
+            <td>-6.524364, 105.737661</td>
+          </tr>
+        </table>
+      </div>
+      
+      <!-- Troubleshooting -->
+      <div class="section">
+        <h2>🔧 Troubleshooting</h2>
+        
+        <h3>Map tidak muncul</h3>
+        <div class="list-item">Pastikan koneksi internet aktif</div>
+        <div class="list-item">Refresh halaman (tekan F5)</div>
+        <div class="list-item">Cek console browser untuk error (tekan F12)</div>
+        
+        <h3>Foto tidak muncul</h3>
+        <div class="list-item">Pastikan foto ada di folder <code>image/</code></div>
+        <div class="list-item">Periksa nama file foto (case-sensitive)</div>
+        <div class="list-item">Format harus PNG atau JPG</div>
+        
+        <h3>URL parameter tidak bekerja</h3>
+        <div class="list-item">Pastikan URL format benar: <code>index.html?to=NAMA</code></div>
+        <div class="list-item">Ganti spasi dengan <code>%20</code></div>
+        <div class="list-item">Refresh halaman setelah mengubah URL</div>
+        
+        <h3>Countdown tidak update</h3>
+        <div class="list-item">Clear browser cache (Ctrl+Shift+Delete)</div>
+        <div class="list-item">Refresh halaman</div>
+        <div class="list-item">Pastikan jam sistem komputer sudah benar</div>
+      </div>
+      
+      <!-- Quick Links -->
+      <div class="section">
+        <h2>🔗 Akses Cepat</h2>
+        
+        <h3>Contoh URL untuk dibagikan:</h3>
+        <div style="margin: 2rem 0;">
+          <a href="index.html" class="link-button">📌 Undangan Umum</a>
+          <a href="index.html?to=Bapak%20Kartono" class="link-button">📌 Untuk Pak Kartono</a>
+          <a href="index.html?to=Ibu%20Tia" class="link-button">📌 Untuk Bu Tia</a>
+          <a href="index.html?to=Keluarga%20Besar" class="link-button">📌 Untuk Keluarga Besar</a>
+          <a href="index.html?to=Khairul" class="link-button">📌 Untuk Khairul</a>
+        </div>
+      </div>
+      
+      <!-- Social Sharing -->
+      <div class="section">
+        <h2>📤 Berbagi Undangan</h2>
+        <p>Anda dapat membagikan undangan ini melalui:</p>
+        <div class="list-item">WhatsApp - Copy URL dan kirim ke teman/keluarga</div>
+        <div class="list-item">Email - Sertakan URL di email</div>
+        <div class="list-item">Telegram - Share link langsung</div>
+        <div class="list-item">Facebook - Post URL dengan screenshot preview</div>
+        <div class="list-item">Instagram - Post URL atau screenshot sebagai caption</div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <p><strong>Website Khitanan Muhammad Rehan</strong></p>
+      <p>Dibuat dengan ❤️ untuk menyebarkan undangan khitanan yang cantik dan interaktif</p>
+      <p>Wassalamu'alaikum Wa Rahmatullahi Wa Barakatuh</p>
+    </div>
+  </div>
+</body>
+</html>
